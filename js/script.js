@@ -99,11 +99,27 @@ function startBonusLevel() {
     document.body.classList.add("bonus-level"); // Aplica o fundo animado
     document.getElementById("titulo").textContent = "Nível Bônus"; // Altera o título
 
-    // Tocar a música
-    const music = new Audio("audio/doom.mp3"); // Substitua pelo caminho correto
+    // Ativar a música e exibir o botão
+    let music = document.getElementById("bonus-music");
+    let musicButton = document.getElementById("toggle-music");
+
     music.play();
-    music.loop = true; // Repetir a música
+    music.loop = true;
+    musicButton.style.display = "block";
+    musicButton.textContent = "🔊 Música: ON";
+
+    // Alternar entre tocar e pausar
+    musicButton.addEventListener("click", function () {
+        if (music.paused) {
+            music.play();
+            musicButton.textContent = "🔊 Música: ON";
+        } else {
+            music.pause();
+            musicButton.textContent = "🔇 Música: OFF";
+        }
+    });
 }
 
-generateCards(levels[currentLevel]);
-// startBonusLevel();
+
+// generateCards(levels[currentLevel]);
+startBonusLevel();

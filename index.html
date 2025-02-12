@@ -8,7 +8,12 @@
 </head>
 <body>
     <div class="main" id="game-container" style="display: block;">
-        <h1 id="titulo">Jogo da Memória</h1>       
+        <h1 id="titulo">Jogo da Memória</h1>
+        <button id="toggle-music" style="display: none;">🔊</button>
+        <audio id="bonus-music" loop>
+            <source src="audio/doom.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio.
+        </audio>       
         <div id="game-board"></div>
         <div id="controls">
             <p>Tentativas: <span id="attempts">0</span></p>
