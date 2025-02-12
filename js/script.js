@@ -121,5 +121,5 @@ function startBonusLevel() {
 }
 
 
-// generateCards(levels[currentLevel]);
-startBonusLevel();
+generateCards(levels[currentLevel]);
+// startBonusLevel();
