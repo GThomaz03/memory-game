@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <div class="main" id="game-container" style="display: block;">
+        <h1 id="titulo">Jogo da Memória</h1>       
+        <div id="game-board"></div>
+        <div id="controls">
+            <p>Tentativas: <span id="attempts">0</span></p>
+            <div class="buttons">
+                <button id="reset" onclick="resetGame()">Reiniciar</button>
+                <button id="next-level" onclick="nextLevel()" style="display: none;">Próximo Nível</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="congratulations" style="display: none;">
+        <h2>Parabéns! Você completou o jogo!</h2>
+        <p>Agora você pode jogar o nível bônus.</p>
+        <button id="bbonus" onclick="startBonusLevel()">Jogar Nível Bônus</button>
+    </div>
+
+    <script defer src="js/script.js"></script>
+</body>
+</html>

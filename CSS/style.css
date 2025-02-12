@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.revealed img {
+    display: block;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+}
+
+#next-level{
+    background: #4CAF50;
+    color: white;
+}
+
+#reset {
+    background: #f44336;
+    color: white;
+}
+
+#bbonus{
+    background: #FFD700;
+    color: black;
+}
+
+#congratulations {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: url('../image/congrats.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    font-size: 24px;
+}
+
+.bonus-level {
+    background: url('../image/bonus.jpg') no-repeat center center;
+    background-size: cover;
+}
