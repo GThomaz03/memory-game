@@ -25,25 +25,8 @@ Um divertido jogo da memória com imagens de gatos! A cada nível, o desafio aum
 
 ## 🛠️ Tecnologias utilizadas
 
-- **React** (Vite)
-- **TypeScript** ou JavaScript
-- **CSS** 
+- **JavaScript** 
 - **HTML**
+- **CSS** 
 
 ---
-
-## 📦 Como executar localmente
-
-```
-  # Clone o repositório
-  git clone https://github.com/GThomaz03/memory-game.git
-  
-  # Acesse o diretório
-  cd memory-game
-  
-  # Instale as dependências
-  npm install
-  
-  # Rode o servidor
-  npm run dev
-```
